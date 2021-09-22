@@ -13,6 +13,8 @@ BD::crearInstancia();
             $pro=$_GET['id'];
             $idsesion = session_id();            
             Productos::addcarrito($idsesion, $pro);
+            header('Location: http://localhost/ike/?controlador=carrito&accion=inicio');
+            
                         
         }
       

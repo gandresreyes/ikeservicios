@@ -30,9 +30,8 @@
                         <p class="card-text text-white  pos "><?php echo  $product->descripcion?></p>
                         <h3 class="textoNeonRojo pos ">$ <?php echo number_format($product->precio); ?></h3>
                         <div class="">
-                            <button value="<?php echo $product->id?>" type="button"   class="btn btn-outline-secondary text-white pos agregar_carrito">Añadir al
-                                carrito
-                            </button >
+                            <a href="?controlador=index&accion=carritoadd&id=<?php echo  $product->id?>" type="button"   class="btn btn-outline-secondary text-white pos agregar_carrito">Añadir al
+                                carrito</a>
                         </div>
 
                     </div>
